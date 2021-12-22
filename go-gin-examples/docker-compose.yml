@@ -1,0 +1,29 @@
+version: "3"
+services:
+  mongo:
+    container_name: mongodb-5.0.5
+    image: mongo:5.0.5
+#    volumes:
+#      - ~/volumes/mongodb/setting:/etc/mongodb
+#      - ~/volumes/mongodb/data:/data/database
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=changeme
+    ports:
+      - "27017:27017"
+  redis:
+    container_name: redis-6.2.6
+    image: redis:6.2.6
+#    volumes:
+#      - ~/volumes/redis/setting/redis.setting:/usr/local/etc/redis/redis.setting
+#      - ~/volumes/redis/data:/data
+    ports:
+      - "6379:6379"
+  go-web-examples:
+    container_name: go-web-examples
+    image: go-web-examples
+    links:
+      - mongo
+      - redis
+    ports:
+      - "8080:8080"

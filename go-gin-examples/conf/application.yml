@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  env: debug
+  domain: http://localhost:8080
+
+async:
+  worker-pool-size: 10
+
+security:
+  jwt:
+    base64-secret: ZmI2OGI0Y2YwN2U4NjdjZDM5MjM1MGEwYzE3NzNlYzRkOGQ0MDE3NmJlNTY0NTMzNzk4ZjJlZDc0Mzg0MGFiZjczMjY1OTZmNmNjN2RmZWM3NmNkNzk2NTBjNjNmNTI4OWQ3MjE4OTk4MjI5MzNmZGI3NDU4ZWFjMjQ2NTQ3NTg
+    token-validity-in-seconds: 86400
+
+data:
+  mongo:
+    uri: mongodb://root:changeme@localhost:27017/go-web-examples?authSource=admin
+    debug: true
+  redis:
+    addr: localhost:6379
+
+email:
+  host: smtp.163.com
+  port: 25
+  username: web_cheng@163.com
+  password: SKONIUKYYDQGHCMU

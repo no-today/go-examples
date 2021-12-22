@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "./domain/user";
+
+message UserDTO {
+  string id = 1;
+  string username = 2;
+  repeated string roles = 4;
+  string email = 5;
+  bool activated = 6;
+  int64 activatedDate = 7;
+
+  string avatarUri = 8;
+  string describe = 9;
+
+  int64 createdDate = 10;
+  int64 lastModifiedDate = 11;
+}
