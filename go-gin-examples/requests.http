@@ -1,0 +1,40 @@
+### Register
+
+POST localhost:8080/api/v1/register
+Content-Type: application/json
+
+{
+  "username": "no-today",
+  "password": "changeme",
+  "email": "web_cheng@163.com"
+}
+
+### Activation
+
+GET localhost:8080/api/v1/activation/:activation_code
+
+### Authenticate
+
+POST localhost:8080/api/v1/authenticate
+Content-Type: application/json
+
+{
+  "principal": "no-today",
+  "credentials": "changeme"
+}
+
+> {% client.global.set("auth_token", response.body.token); %}}
+
+### ResendActivateEmail
+
+POST localhost:8080/api/v1/resendActivateEmail
+Content-Type: application/json
+
+{
+  "email": "web_cheng@163.com"
+}
+
+### GetAllUsers
+
+GET localhost:8080/api/v1/users?page=1&size=10&orderBy=id desc,username
+Authorization: {{auth_token}}
