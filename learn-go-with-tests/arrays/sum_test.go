@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"reflect"
 	"testing"
 )
@@ -91,5 +92,28 @@ func assertEquals(t *testing.T, got int, want int) {
 func assertDeepEquals(t *testing.T, got []int, want []int) {
 	if !reflect.DeepEqual(got, want) {
 		t.Errorf("want: %v, got: %v", want, got)
+	}
+}
+
+func TestSlice(t *testing.T) {
+	slice0 := []int{1, 2, 3}
+
+	// 两个指针指向同一块内存
+	slice1 := slice0[:]
+
+	slice2 := slice0
+
+	println(slice0)
+	println(slice1)
+	println(slice2)
+
+	slice0[0] = 3
+
+	fmt.Printf("%v\n", slice0)
+	fmt.Printf("%v\n", slice1)
+	fmt.Printf("%v\n", slice2)
+
+	if !reflect.DeepEqual(slice0, slice1) {
+		t.Errorf("预期相同,但是没有")
 	}
 }
