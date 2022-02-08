@@ -1,8 +1,8 @@
 package user
 
 import (
-	"cathub.me/go-web-examples/pkg/data"
-	"cathub.me/go-web-examples/pkg/database"
+	"cathub.me/go-gin-examples/pkg/data"
+	"cathub.me/go-gin-examples/pkg/database"
 	"context"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"

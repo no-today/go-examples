@@ -1,9 +1,9 @@
 package rest
 
 import (
-	"cathub.me/go-web-examples/domain/user"
-	"cathub.me/go-web-examples/pkg/data"
-	"cathub.me/go-web-examples/pkg/response"
+	"cathub.me/go-gin-examples/domain/user"
+	"cathub.me/go-gin-examples/pkg/data"
+	"cathub.me/go-gin-examples/pkg/response"
 	"github.com/gin-gonic/gin"
 )
 

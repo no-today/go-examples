@@ -1,10 +1,10 @@
 package jwt
 
 import (
-	"cathub.me/go-web-examples/middleware/security"
-	"cathub.me/go-web-examples/pkg/errors"
-	"cathub.me/go-web-examples/pkg/response"
-	"cathub.me/go-web-examples/pkg/setting"
+	"cathub.me/go-gin-examples/middleware/security"
+	"cathub.me/go-gin-examples/pkg/errors"
+	"cathub.me/go-gin-examples/pkg/response"
+	"cathub.me/go-gin-examples/pkg/setting"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt"

@@ -1,7 +1,7 @@
 package errors
 
 import (
-	"cathub.me/go-web-examples/web/formatter"
+	"cathub.me/go-gin-examples/web/formatter"
 	"github.com/go-playground/validator/v10"
 	"net/http"
 )

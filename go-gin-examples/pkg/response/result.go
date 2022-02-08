@@ -1,7 +1,7 @@
 package response
 
 import (
-	"cathub.me/go-web-examples/pkg/errors"
+	"cathub.me/go-gin-examples/pkg/errors"
 	"github.com/gin-gonic/gin"
 )
 

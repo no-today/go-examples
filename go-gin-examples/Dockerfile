@@ -1,10 +1,15 @@
-FROM golang:latest
+FROM golang:alpine as builder
 
-WORKDIR $GOPATH/src/cathub.me/go-web-examples
-COPY . $GOPATH/src/cathub.me/go-web-examples
+WORKDIR /go/src/go-gin-examples
+COPY . /go/src/go-gin-examples
 
 RUN export GOPROXY=https://goproxy.cn
 RUN go build .
 
+FROM alpine:latest as prod
+
+WORKDIR /root/
+COPY --from=0 /go/src/go-gin-examples .
+
 EXPOSE 8080
-ENTRYPOINT ["./go-web-examples"]
+ENTRYPOINT ["./go-gin-examples"]

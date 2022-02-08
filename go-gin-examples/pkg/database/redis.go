@@ -1,7 +1,7 @@
 package database
 
 import (
-	"cathub.me/go-web-examples/pkg/setting"
+	"cathub.me/go-gin-examples/pkg/setting"
 	"context"
 	"github.com/go-redis/redis/v8"
 	"sync"

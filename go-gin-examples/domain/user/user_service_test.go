@@ -1,12 +1,12 @@
 package user
 
 import (
-	"cathub.me/go-web-examples/middleware/security"
-	"cathub.me/go-web-examples/pkg/database"
-	"cathub.me/go-web-examples/pkg/errors"
-	"cathub.me/go-web-examples/pkg/logging"
-	"cathub.me/go-web-examples/pkg/setting"
-	"cathub.me/go-web-examples/pkg/utils/strutil"
+	"cathub.me/go-gin-examples/middleware/security"
+	"cathub.me/go-gin-examples/pkg/database"
+	"cathub.me/go-gin-examples/pkg/errors"
+	"cathub.me/go-gin-examples/pkg/logging"
+	"cathub.me/go-gin-examples/pkg/setting"
+	"cathub.me/go-gin-examples/pkg/utils/strutil"
 	"context"
 	"fmt"
 	"github.com/go-redis/redis/v8"

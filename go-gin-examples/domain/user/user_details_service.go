@@ -1,9 +1,9 @@
 package user
 
 import (
-	"cathub.me/go-web-examples/middleware/security/jwt"
-	"cathub.me/go-web-examples/pkg/errors"
-	"cathub.me/go-web-examples/pkg/utils/encrypt"
+	"cathub.me/go-gin-examples/middleware/security/jwt"
+	"cathub.me/go-gin-examples/pkg/errors"
+	"cathub.me/go-gin-examples/pkg/utils/encrypt"
 	"context"
 	"regexp"
 	"sync"

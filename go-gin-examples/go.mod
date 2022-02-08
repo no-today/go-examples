@@ -1,4 +1,4 @@
-module cathub.me/go-web-examples
+module cathub.me/go-gin-examples
 
 go 1.17
 

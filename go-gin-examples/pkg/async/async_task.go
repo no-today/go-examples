@@ -1,7 +1,7 @@
 package async
 
 import (
-	"cathub.me/go-web-examples/pkg/setting"
+	"cathub.me/go-gin-examples/pkg/setting"
 	"github.com/gammazero/workerpool"
 	"sync"
 )

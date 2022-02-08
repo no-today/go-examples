@@ -1,8 +1,8 @@
 package database
 
 import (
-	"cathub.me/go-web-examples/pkg/data"
-	"cathub.me/go-web-examples/pkg/setting"
+	"cathub.me/go-gin-examples/pkg/data"
+	"cathub.me/go-gin-examples/pkg/setting"
 	"context"
 	"github.com/rs/zerolog/log"
 	"go.mongodb.org/mongo-driver/bson"

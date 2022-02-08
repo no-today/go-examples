@@ -1,9 +1,9 @@
 package main
 
 import (
-	"cathub.me/go-web-examples/pkg/setting"
-	"cathub.me/go-web-examples/timer"
-	"cathub.me/go-web-examples/web"
+	"cathub.me/go-gin-examples/pkg/setting"
+	"cathub.me/go-gin-examples/timer"
+	"cathub.me/go-gin-examples/web"
 	"context"
 	"fmt"
 	"github.com/gin-gonic/gin"

@@ -1,8 +1,8 @@
 package web
 
 import (
-	"cathub.me/go-web-examples/middleware/security/jwt"
-	"cathub.me/go-web-examples/web/rest"
+	"cathub.me/go-gin-examples/middleware/security/jwt"
+	"cathub.me/go-gin-examples/web/rest"
 	"github.com/gin-gonic/gin"
 )
 

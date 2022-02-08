@@ -1,7 +1,7 @@
 package mail
 
 import (
-	"cathub.me/go-web-examples/pkg/setting"
+	"cathub.me/go-gin-examples/pkg/setting"
 	"fmt"
 	"github.com/jordan-wright/email"
 	"github.com/rs/zerolog/log"

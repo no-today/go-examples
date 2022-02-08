@@ -1,7 +1,7 @@
 package timer
 
 import (
-	"cathub.me/go-web-examples/domain/user"
+	"cathub.me/go-gin-examples/domain/user"
 	"context"
 	"github.com/robfig/cron/v3"
 	"github.com/rs/zerolog/log"
