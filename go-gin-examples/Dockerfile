@@ -8,8 +8,9 @@ RUN go build .
 
 FROM alpine:latest as prod
 
-WORKDIR /root/
+WORKDIR /go/src/go-gin-examples
 COPY --from=0 /go/src/go-gin-examples .
+COPY --from=0 /go/src/go-gin-examples/conf/* ./conf
 
 EXPOSE 8080
 ENTRYPOINT ["./go-gin-examples"]
