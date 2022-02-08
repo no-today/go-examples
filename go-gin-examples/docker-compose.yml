@@ -19,9 +19,9 @@ services:
 #      - ~/volumes/redis/data:/data
     ports:
       - "6379:6379"
-  go-web-examples:
-    container_name: go-web-examples
-    image: go-web-examples
+  go-gin-examples:
+    container_name: go-gin-examples
+    image: go-gin-examples:1.0
     links:
       - mongo
       - redis
